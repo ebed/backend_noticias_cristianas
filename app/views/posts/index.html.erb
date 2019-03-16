@@ -1,0 +1,19 @@
+<% @posts.each do |post| %>
+    
+    <h2>
+    <%= post.title %>
+    </h2>
+    <h3>
+        <%= post.fecha_publicacion %>
+    </h3>
+    <div class="image">
+        <img src="<%= post.image %>">
+    </div>
+    <div class="contenido">
+        <%= raw(post.content) %>
+    </div>
+    <h5>
+        <%= post.url %>
+    </h5>
+    
+<% end %>
